@@ -1,0 +1,142 @@
+{
+	"info": {
+		"_postman_id": "ea974be9-01b4-4ff3-ae24-b6d16433c8ef",
+		"name": "taskListApi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "allTasks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/tasks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"tasks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "insertTask",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"status\": [\n        \"completed\"\n    ],\n    \"name\": \"task #X: Symphony X\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/tasks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"tasks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "taskById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/tasks/5c06d335859f6f2a4c174c61",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"tasks",
+						"5c06d335859f6f2a4c174c61"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateTaskById",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"status\": [\n        \"complete\"\n    ]\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/tasks/5bb508a2fb8cf825e0f1337f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"tasks",
+						"5bb508a2fb8cf825e0f1337f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteTaskById",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"status\": [\n        \"complete\"\n    ]\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/tasks/5c06d4cd859f6f2a4c174c63",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"tasks",
+						"5c06d4cd859f6f2a4c174c63"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
