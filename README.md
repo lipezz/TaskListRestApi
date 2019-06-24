@@ -1,7 +1,8 @@
 # taskListApi
 <ul>
-<li> Simple Node Rest Mongo Api crud operations for a task list; </li>
-<li>Postman collection with sample data included; </li>
-<li>This API uses express, mongoose and body parser; </li>
-<li>by Luiz.</li>
+<li>Api feita em Nodejs, utilizando o framework Express</li>
+<li>Objetivo da Api é executar operações CRUD para uma lista de tarefas, persistindo no MongoDB</li>
+<li>Collection Postman com massa para teste incluída</li>
+<li>Para iniciar a aplicação basta executar o comando 'npm start' ou ainda 'nodemon server.js'</li>
+<li>O MongoDb configurado no arquivo server.js deverá estar ativo para que a aplicação suba corretamente.</li>
 </ul>  
